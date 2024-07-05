@@ -44,6 +44,11 @@
             height: 60px;
             color: white;
         }
+
+        input:focus{
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        }
     }
 }
 
@@ -53,5 +58,12 @@
        justify-content: flex-start;
        padding: 40px 120px;
        gap: 115px;
+    }
+}
+
+@media (max-width: 450px) {
+    .form-section {
+       padding: 20px 40px;
+       gap: 20px;
     }
 }

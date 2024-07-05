@@ -14,15 +14,20 @@ main{
     flex-direction: column;
     font-family: "Roboto, sans-serif";
     padding: 0 70px;
+    img{
+        width:42rem;
+        height:33.5rem;
+
+    }
 
     span{
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700; 
         color: $secondary-text;
     }
 
     h1{
-        font-size: 72px;
+        font-size: 4.5rem;
         font-weight: 900;
         color: $primary-text;
     }
@@ -34,9 +39,9 @@ main{
     align-items: center;
     justify-content: center;
     padding: 0 70px;
-    gap: 70px;
+    gap: 4.5rem;
 
-    .benefit-data {
+    .benefict-data {
         padding-bottom: 40px;
         border-bottom: 10px solid $secondary-color;
 
@@ -78,4 +83,54 @@ main{
     .benefit-section {
         flex-direction: row;
     }
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        .headline{
+            justify-content: start;
+        }
+        img{
+            width:35rem;
+            height:26.5rem;
+        }
+        
+        span{
+            font-size: 1.25rem;
+            font-weight: 700; 
+            color: $secondary-text;
+        }
+    
+        h1{
+            font-size: 3rem;
+            font-weight: 900;
+            color: $primary-text;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .benefit-section{
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .main-section {
+        padding: 0 40px;
+        img{
+            width:22rem;
+            height:18.5rem;
+        }
+
+
+    
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .cta-section{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
 }
